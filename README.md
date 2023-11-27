@@ -2,6 +2,7 @@
 ---------------------
 ([https://github.com/sandino/Markdown-Cheatsheet](https://github.com/sandino/Markdown-Cheatsheet))
 (перевод, [оригинал](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet))
+[дополнительная статья](https://www.markdownguide.org/cheat-sheet/)
 
 Поиграть с разметкой Markdown можно на [демо-странице](http://www.markdown-here.com/livedemo.html).
 

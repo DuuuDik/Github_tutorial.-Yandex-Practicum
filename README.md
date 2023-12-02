@@ -20,6 +20,15 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 - *Commit changes and save to the log*  
 `git commit -m "DONT FORGET TO WRITE COMMENTS`"`  
 
+
+### A bit of information about Git statuses  
+1. **untracked** - Git does not have history with file nor saves it with commits.  
+2. **tracked** - an opposite of **untracked** status. Git added file to its logs and will track its changes and, in general, existance(whether it was deleted or moved).
+3. **staged** - after running `git add` file becomes staged.
+
+
+![alt-text](https://github.com/DuuuDik/Github_tutorial.-Yandex-Practicum/blob/master/pictures/gits_statuses.png)
+
 ## Working with log history   
 - *Get full log history*  
 `git log` 

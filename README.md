@@ -59,6 +59,8 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 - *Restore file to latest `git commit` or `git add`(staged) version*  
 `git restore <file>`  
 
+![alt-text](https://github.com/DuuuDik/Github_tutorial.-Yandex-Practicum/blob/master/pictures/git_reset.png)
+
 **IMPORTANT TIP:** `reset` works with commits, while `restore` works with files. Might be usefull to memorise that.
 
 ## Connect Git to Github

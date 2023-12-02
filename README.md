@@ -20,7 +20,6 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 - *Commit changes and save to the log*  
 `git commit -m "DONT FORGET TO WRITE COMMENTS`"`  
 
-
 ### A bit of information about Git statuses  
 1. **untracked** - Git does not have history with file nor saves it with commits.  
 2. **tracked** - an opposite of **untracked** status. Git added file to its logs and will track its changes and, in general, existance(whether it was deleted or moved).
@@ -37,10 +36,30 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 - *Get short log history*   
 `git log --oneline` 
 
-# A bit of additional information about logs
-- Git transforms information about your commits into SHA-1 code and the output is call **hash**  
+### Additional information about logs
+- Git transforms information about your commits using algolithm SHA-1 and produces **hash**  
 - **Hash** allows to get information about commit, its author and info about commited files  
 - **HEAD** is file within .git repositary, which holds the name of the latest commit. It can be used as an argument, if you need to address latest commit.  
+
+### Change made commits
+- *Change latest commit*  
+`git commit --amend --no-edit`  
+**--no-edit** flag saves previous message given to the edited commit  
+
+- *Change latest commit massage*  
+`git commit --amend -m "New massage"`
+
+### Change before commits
+- *Unstage file(s)/reverce latest `git add`*  
+`git restore --staged <file>`  
+
+- *Reset commit to older version*  
+`git reset --hard <commit hash>`
+
+- *Restore file to latest `git commit` or `git add`(staged) version*  
+`git restore <file>`  
+
+**IMPORTANT TIP:** `reset` works with commits, while `restore` works with files. Might be usefull to memorise that.
 
 ## Connect Git to Github
 - *If ~/.ssh/ does not exist, generate SSH-keys first*   

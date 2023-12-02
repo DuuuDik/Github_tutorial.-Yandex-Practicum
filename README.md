@@ -24,7 +24,8 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 ### A bit of information about Git statuses  
 1. **untracked** - Git does not have history with file nor saves it with commits.  
 2. **tracked** - an opposite of **untracked** status. Git added file to its logs and will track its changes and, in general, existance(whether it was deleted or moved).
-3. **staged** - after running `git add` file becomes staged.
+3. **staged** - after running `git add` file becomes staged as well as **tracked**. Staged status says that this file and it current version is ready for commit.
+4. **modified** - a **tracked** file that has been modified. You can run `git add` to prepare file for commit and change its status to **staged**
 
 
 ![alt-text](https://github.com/DuuuDik/Github_tutorial.-Yandex-Practicum/blob/master/pictures/gits_statuses.png)
@@ -35,6 +36,11 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 
 - *Get short log history*   
 `git log --oneline` 
+
+# A bit of additional information about logs
+- Git transforms information about your commits into SHA-1 code and the output is call **hash**  
+- **Hash** allows to get information about commit, its author and info about commited files  
+- **HEAD** is file within .git repositary, which holds the name of the latest commit. It can be used as an argument, if you need to address latest commit.  
 
 ## Connect Git to Github
 - *If ~/.ssh/ does not exist, generate SSH-keys first*   
@@ -68,8 +74,11 @@ OR
 `git pull origin main` for the first time, later you can use simplified version  
 `git pull` 
 
+## How to Commit correctly. Conventional Commits
+([Conventional Commits standarts](https://www.conventionalcommits.org/ru/v1.0.0-beta.4))
+
 
 Cheatlist for Markdown  
-([https://github.com/sandino/Markdown-Cheatsheet](https://github.com/sandino/Markdown-Cheatsheet))
-([original](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet))
+([https://github.com/sandino/Markdown-Cheatsheet](https://github.com/sandino/Markdown-Cheatsheet))  
+([original](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet))  
 [additional usefull link](https://www.markdownguide.org/cheat-sheet/)

@@ -31,14 +31,14 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 - *If ~/.ssh/ does not exist, generate SSH-keys first*   
 `ssh-keygen -t ed25519 -C "your@email.here"`  
 OR  
-`ssh-keygen -t rsa -b 4096 -C "your@email.here"`
+`ssh-keygen -t rsa -b 4096 -C "your@email.here"`  
 As a result of commands, it will ask where to save generated keys and also new passwords for them.  
 I recommend leaving those empty.  
 
-- *Copy ssh key and paste it later in Github settings*
-*clip < ~/.ssh/id_rsa.pub*   
+- *Copy ssh key and paste it later in Github settings*  
+`clip < ~/.ssh/id_rsa.pub`
 OR  
-*clip < ~/.ssh/id_ed25519.pub *   
+`clip < ~/.ssh/id_ed25519.pub`
 
 - *Check if connection works. If done correcty, you will see first-timer warning, enter "yes" to continue*   
 `ssh -T git@github.com`  
@@ -55,7 +55,7 @@ OR
 `git push -u origin main` for the first time, later you can use simplified version  
 `git push`  
 
-- *Pull remote to local*
+- *Pull remote to local*  
 `git pull origin main` for the first time, later you can use simplified version  
 `git pull` 
 

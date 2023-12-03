@@ -11,7 +11,8 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 
 ## Git local commands
 - *Check Git status*  
-`git status`  
+`git status`   
+`git status --ignored` - adds **Ignored files** section    
 
 - *Add files, start to track them*  
 `git add <file.name>`   
@@ -23,7 +24,7 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 ### A bit of information about Git statuses  
 1. **untracked** - Git does not have history with file nor saves it with commits.  
 2. **tracked** - an opposite of **untracked** status. Git added file to its logs and will track its changes and, in general, existance(whether it was deleted or moved).
-3. **staged** - after running `git add` file becomes staged as well as **tracked**. Staged status says that this file and it current version is ready for commit.
+3. **staged** - after running `git add` file becomes staged as well as **tracked**. Staged status says that this file current version is ready for commit.
 4. **modified** - a **tracked** file that has been modified. You can run `git add` to prepare file for commit and change its status to **staged**
 
 
@@ -35,6 +36,15 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 
 - *Get short log history*   
 `git log --oneline` 
+
+- *Get changes of one commit*  
+`git diff <hash>`
+
+- *Get changes between commits*  
+`git diff <first hash> <second_hash>`
+
+- *Reset files to older version*  
+`git reset --hard <commit hash>`
 
 ### Additional information about logs
 - Git transforms information about your commits using algolithm SHA-1 and produces **hash**  
@@ -49,12 +59,17 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 - *Change latest commit massage*  
 `git commit --amend -m "New massage"`
 
+### Check changes
+- *See what changes have been made in **modified***   
+`git diff`  
+
+- *See what changes have been made in **staged***  
+`git diff --staged`  
+
+
 ### Change before commits
 - *Unstage file(s)/reverce latest `git add`*  
 `git restore --staged <file>`  
-
-- *Reset commit to older version*  
-`git reset --hard <commit hash>`
 
 - *Restore file to latest `git commit` or `git add`(staged) version*  
 `git restore <file>`  
@@ -95,11 +110,40 @@ OR
 `git pull origin main` for the first time, later you can use simplified version  
 `git pull` 
 
+## .gitignore usage samples
+1. `file_name`  ignores all files with this name in all folders
+2. `*.jpeg` ignores all files with `jpeg` extention   
+- `docs/*/tmp` ignores all **tmp** files in all **docs** subfolders. (example docs/first/tmp)   
+- `docs/**/tmp` ignores any **tmp** within **docs** on any level. (example docs/a/b/c/b/tmp)   
+3. **?** - means any character, but only one.  
+For instance `file?.txt` will ignore **file1.txt**
+4. [...] - means a range of characters, but only one.  
+For instanse `file[0-2].txt` will ignore `file2.txt`, but won't ignore **file3.txt**  
+Sames goes for letters `[a-z]`  
+5. `/todo.txt` - ignores **todo.txt** in root folder  
+`build/` - ignores folder **build**  
+6. `!` inverts any given rule.  Usefull for exceptions.  
+`*.jpeg` but we want to save Doge meme  
+`!doge.jpeg`  
+
+
+
+#### Less usefull comands  
+- *Read a text file*  
+`cat <file>`
+
+- *Write into a text file new line*  
+`echo "new line" >> <file>`
+
+- *Write into a text file line, fully overwriting file contents*  
+`echo "new line" > <file>`
+
+*If you accidently activated Vim, when you forgot to add message to commit, write `!qa!` to exit
+
 ## How to Commit correctly. Conventional Commits
 ([Conventional Commits standarts](https://www.conventionalcommits.org/ru/v1.0.0-beta.4))
 
-
-Cheatlist for Markdown  
+## Cheatlist for Markdown  
 ([https://github.com/sandino/Markdown-Cheatsheet](https://github.com/sandino/Markdown-Cheatsheet))  
 ([original](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet))  
 [additional usefull link](https://www.markdownguide.org/cheat-sheet/)

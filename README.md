@@ -102,6 +102,14 @@ OR
 `git remote -v`  
 
 ## Working with Github
+#### Clone
+- *Cloning existing Github to local*  
+`git clone <ssh-link>`
+
+- *Update local repositary by Github version*
+`git remote -v`
+
+#### Pull and Push
 - *Push local to remote (Git to Github)*  
 `git push -u origin main` for the first time, later you can use simplified version  
 `git push`  
@@ -119,7 +127,7 @@ OR
 For instance `file?.txt` will ignore **file1.txt**
 4. [...] - means a range of characters, but only one.  
 For instanse `file[0-2].txt` will ignore `file2.txt`, but won't ignore **file3.txt**  
-Sames goes for letters `[a-z]`  
+Same goes for letters `[a-z]`  
 5. `/todo.txt` - ignores **todo.txt** in root folder  
 `build/` - ignores folder **build**  
 6. `!` inverts any given rule.  Usefull for exceptions.  

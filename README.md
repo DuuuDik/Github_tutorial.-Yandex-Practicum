@@ -78,6 +78,18 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 
 **IMPORTANT TIP:** `reset` works with commits, while `restore` works with files. Might be usefull to memorise that.
 
+## Working with branches
+- *View branches*  
+`git branch`
+
+- *Create new branch*  
+`git branch <branch_name>` 
+
+- *Jump to another branch*  
+`git checkout <branch_name>`  
+`git checkout -b <branch_name` - create new branch and jump on it
+
+
 ## Connect Git to Github
 - *If ~/.ssh/ does not exist, generate SSH-keys first*   
 `ssh-keygen -t ed25519 -C "your@email.here"`  
@@ -123,9 +135,9 @@ OR
 2. `*.jpeg` ignores all files with `jpeg` extention   
 - `docs/*/tmp` ignores all **tmp** files in all **docs** subfolders. (example docs/first/tmp)   
 - `docs/**/tmp` ignores any **tmp** within **docs** on any level. (example docs/a/b/c/b/tmp)   
-3. **?** - means any character, but only one.  
+3. `?` - means any character, but only one.  
 For instance `file?.txt` will ignore **file1.txt**
-4. [...] - means a range of characters, but only one.  
+4. `[...]` - means a range of characters, but only one.  
 For instanse `file[0-2].txt` will ignore `file2.txt`, but won't ignore **file3.txt**  
 Same goes for letters `[a-z]`  
 5. `/todo.txt` - ignores **todo.txt** in root folder  
@@ -153,5 +165,5 @@ Same goes for letters `[a-z]`
 
 ## Cheatlist for Markdown  
 ([https://github.com/sandino/Markdown-Cheatsheet](https://github.com/sandino/Markdown-Cheatsheet))  
-([original](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet))  
-[additional usefull link](https://www.markdownguide.org/cheat-sheet/)
+([checklist](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet))  
+([additional usefull link](https://www.markdownguide.org/cheat-sheet/))

@@ -1,0 +1,1 @@
+To brows all active branches, use "git branch" command

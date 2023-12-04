@@ -105,7 +105,7 @@ from `master` branch
 Use flag `-d` if you don't want to delete branch, if it wasn't merged before  
 
 In case **CONFLICT** emergies, manually solve it  
-
+![alt-text](https://github.com/DuuuDik/Github_tutorial.-Yandex-Practicum/blob/master/pictures/merge_conflict.png)
 [Official Git recomendations about solving conflicts](https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%83%D1%82%D0%BE%D0%B5-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5)
 
 ## Connect Git to Github

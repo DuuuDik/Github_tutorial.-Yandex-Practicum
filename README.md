@@ -78,6 +78,7 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 **IMPORTANT TIP:** `reset` works with commits, while `restore` works with files. Might be usefull to memorise that.
 
 ## Working with branches
+#### General interaction with branches
 - *View branches*  
 `git branch`
 
@@ -91,13 +92,21 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 - *Get differencies between branches*  
 `git diff <branch_1> <branch_2>`  
 **PRO-TIP** - it is possible to compare branches to commit hashes.   
-
-`~` sign is used to simplify comparison. By default, it gets commit before current one  
+**PRO-TIP** - `~` sign is used to simplify comparison. By default, it gets commit before current one  
 but it can get any number after it, for instace `master~3`, will show 3rd from end commit  
 from `master` branch 
 
 #### Merge and delete branches
+- *Merge branches*  
+`git merge <merged_branch>`  use from another branch.
 
+- *Delete branch*  
+`git branch -D <branch_name>`  
+Use flag `-d` if you don't want to delete branch, if it wasn't merged before  
+
+In case **CONFLICT** emergies, manually solve it  
+
+[Official Git recomendations about solving conflicts](https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%83%D1%82%D0%BE%D0%B5-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5)
 
 ## Connect Git to Github
 - *If ~/.ssh/ does not exist, generate SSH-keys first*   

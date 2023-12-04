@@ -8,7 +8,6 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 - *Delete .git folder (in case if needed)*  
 `rm -rf .git` 
 
-
 ## Git local commands
 - *Check Git status*  
 `git status`   
@@ -88,6 +87,16 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 - *Jump to another branch*  
 `git checkout <branch_name>`  
 `git checkout -b <branch_name` - create new branch and jump on it
+
+- *Get differencies between branches*  
+`git diff <branch_1> <branch_2>`  
+**PRO-TIP** - it is possible to compare branches to commit hashes.   
+
+`~` sign is used to simplify comparison. By default, it gets commit before current one  
+but it can get any number after it, for instace `master~3`, will show 3rd from end commit  
+from `master` branch 
+
+#### Merge and delete branches
 
 
 ## Connect Git to Github

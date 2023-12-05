@@ -108,7 +108,8 @@ In case **CONFLICT** emergies, manually solve it
 ![alt-text](https://github.com/DuuuDik/Github_tutorial.-Yandex-Practicum/blob/master/pictures/merge_conflict.png)
 [Official Git recomendations about solving conflicts](https://git-scm.com/book/ru/v2/%D0%98%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-Git-%D0%9F%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%83%D1%82%D0%BE%D0%B5-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5)
 
-## Connect Git to Github
+## Working with Github
+#### Connect Git to Github
 - *If ~/.ssh/ does not exist, generate SSH-keys first*   
 `ssh-keygen -t ed25519 -C "your@email.here"`  
 OR  
@@ -131,7 +132,6 @@ OR
 - *Check if link established correctly*  
 `git remote -v`  
 
-## Working with Github
 #### Clone
 - *Cloning existing Github to local*  
 `git clone <ssh-link>`
@@ -141,8 +141,9 @@ OR
 
 #### Pull and Push
 - *Push local to remote (Git to Github)*  
-`git push -u origin main` for the first time, later you can use simplified version  
-`git push`  
+`git push -u origin <brach_name>` for the first time for each branch, later you can use simplified version  
+`git push`   
+
 
 - *Pull remote to local*  
 `git pull origin main` for the first time, later you can use simplified version  

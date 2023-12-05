@@ -80,7 +80,8 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 ## Working with branches
 #### General interaction with branches
 - *View branches*  
-`git branch`
+`git branch`  
+`git branch -a` - displays all known branches: locan and Github ones
 
 - *Create new branch*  
 `git branch <branch_name>` 
@@ -131,6 +132,13 @@ OR
 
 - *Check if link established correctly*  
 `git remote -v`  
+
+#### Disconnect
+- *Delete connected remote Github link*  
+`git remote rm origin`
+
+- *Re-link local repositary to Github*  
+`git remote add origin git@github.com:%YOUR_ACCOUNT%/git-github-case.git` 
 
 #### Clone
 - *Cloning existing Github to local*  

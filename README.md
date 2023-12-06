@@ -88,7 +88,8 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 
 - *Jump to another branch*  
 `git checkout <branch_name>`  
-`git checkout -b <branch_name` - create new branch and jump on it
+`git checkout -b <branch_name` - create new branch and jump on it  
+`git checkout -` - switch to the branch last checked out
 
 - *Get differencies between branches*  
 `git diff <branch_1> <branch_2>`  

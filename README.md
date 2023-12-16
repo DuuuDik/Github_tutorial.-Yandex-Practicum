@@ -93,18 +93,37 @@ In this repositary, I will try to collect most usefull Git Bash commands.
 
 - *Get differencies between branches*  
 `git diff <branch_1> <branch_2>`  
-**PRO-TIP** - it is possible to compare branches to commit hashes.   
-**PRO-TIP** - `~` sign is used to simplify comparison. By default, it gets commit before current one  
+**PRO-TIP:** - it is possible to compare branches to commit hashes.   
+**PRO-TIP:** - `~` sign is used to simplify comparison. By default, it gets commit before current one  
 but it can get any number after it, for instace `master~3`, will show 3rd from end commit  
 from `master` branch 
 
 #### Merge and delete branches
 - *Merge branches*  
-`git merge <merged_branch>`  use from another branch.
+`git merge <merged_branch>`  use from branch, in which you want to add changes from written branch.  
+`--no-ff` - disables **fast-forward**  
+`--no-edit` - disables comments for merge commit   
+
+**PRO-TIP:** most projects disable **fast-forward** feature, because information about merged branch dissapears and log seems like changes have been made in only `main` branch
 
 - *Delete branch*  
 `git branch -D <branch_name>`  
 Use flag `-d` if you don't want to delete branch, if it wasn't merged before  
+
+#### Merge conflicts tips
+**You can resolve conflic manually. Duh**  
+*Seriosly, sometimes it is easier to correct minor mistake yourself*  
+
+**vimdiff**  
+`git mergetool` - one of the default tools to resolve conflict  
+
+**Visual Studio Code**  
+
+
+- *Force to rewrite Github commits with local branch changes to Github*  
+`git push --force`  
+
+`git rebase` - ?
 
 In case **CONFLICT** emergies, manually solve it  
 ![alt-text](https://github.com/DuuuDik/Github_tutorial.-Yandex-Practicum/blob/master/pictures/merge_conflict.png)

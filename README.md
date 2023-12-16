@@ -117,8 +117,7 @@ Use flag `-d` if you don't want to delete branch, if it wasn't merged before
 **vimdiff**  
 `git mergetool` - one of the default tools to resolve conflict  
 
-**Visual Studio Code**  
-
+**Visual Studio Code** - provides very user-friendly interface for resolving conflicts  
 
 - *Force to rewrite Github commits with local branch changes to Github*  
 `git push --force`  
